@@ -28,6 +28,7 @@ I am an Information Technology student focused on enterprise system administrati
 ├── 03-Ethical-Hacking-and-Security/
 │   └── README.md
 └── README.md
+```
 ## 🧪 Active Lab Index
 
 | Category | Lab Title | Core Concepts Covered | Lab Report |
@@ -36,3 +37,8 @@ I am an Information Technology student focused on enterprise system administrati
 | **Active Directory** | Lab 02: OUs & Granular NTFS Permissions | OU Architecture, Access Control Lists (ACLs), PoLP | [View Report](./01-Active-Directory/Lab-02-Active-Directory-OUs-and-NTFS-Permissions) |
 | **Linux Admin** | *Upcoming Lab* | Systemd, File System Permissions, Shell Scripting | *In Progress* |
 | **Ethical Hacking** | *Upcoming Lab* | Network Scanning, Vulnerability Assessment | *In Progress* |
+
+# 👤 Author
+Bill Spencer Captain
+
+GitHub: @Spence-X
