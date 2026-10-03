@@ -86,7 +86,8 @@ rsop.msc snap-in displaying Ensign Domain Policy as the active Source GPO for Ac
 ![RSOP Verification](screenshots/05-rsop-verification.png)
 
 
-👤 Author & Lab Metadata
+ 
+ 👤Author & Lab Metadata
  Author: Bill Spencer Captain
 
  Environment: Windows Server 2025 Datacenter (billspencer.local)
