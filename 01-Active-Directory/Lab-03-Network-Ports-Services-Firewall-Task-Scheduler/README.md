@@ -53,8 +53,8 @@ netstat -ano | findstr LISTENING
 * **Port 53 (DNS - Domain Name System):** Listens for incoming hostname-to-IP resolution queries from domain clients. Essential for Active Directory locator services.
 * **Port 389 (LDAP - Lightweight Directory Access Protocol):** Listens for authentication requests, directory object queries, and schema lookups across `billspencer.local`.
 
-> **Placeholder:** *Insert screenshot showing `netstat -ano | findstr LISTENING` terminal output highlighting Port 53 and Port 389 alongside their Process IDs (PIDs).*
-> `![Listening Ports Output](./screenshots/01-netstat-listening-ports.png)`
+screenshot showing `netstat -ano | findstr LISTENING` terminal output highlighting Port 53 and Port 389 alongside their Process IDs (PIDs).*
+![Listening Ports Output](./Screenshots/01-netstat-listening-ports.png)
 
 ---
 
@@ -70,8 +70,8 @@ Network-dependent system services were inspected via the Services MMC Snap-in (`
    * **Service Name:** `NTDS`
    * **Description:** Stores directory database objects (users, groups, computers) and manages security principals, domain authentication, and Group Policy enforcement.
 
-> **Placeholder:** *Insert screenshot of `services.msc` showing the DNS Server and Active Directory Domain Services running status.*
-> `![Running Network Services](./screenshots/02-running-network-services.png)`
+screenshot of `services.msc` showing the DNS Server and Active Directory Domain Services running status.
+![Active Listening Ports](Screenshots/02-services-mmc.png)
 
 ---
 
@@ -95,8 +95,8 @@ New-NetFirewallRule -DisplayName "Custom Outbound Rule - Port 50000 TCP" -Direct
 #### Operational State Demonstration:
 The firewall rules were visually demonstrated and validated in both **Enabled** and **Disabled** states to ensure operational readiness for application-specific port requirements.
 
-> **Placeholder:** *Insert screenshot showing both Inbound and Outbound rules for Port 50000 in the Windows Defender Firewall console.*
-> `![Firewall Rules Custom Port 50000](./screenshots/03-firewall-rules-50000.png)`
+screenshot showing both Inbound and Outbound rules for Port 50000 in the Windows Defender Firewall console.
+![Firewall Rules Custom Port 50000](./Screenshots/03-firewall-rule.png)
 
 ---
 
@@ -111,8 +111,8 @@ To maintain patch management compliance without manual intervention, a daily sch
 * **Program/Script:** `powershell.exe`
 * **Arguments:** `-Command "UsoClient StartScan"`
 
-> **Placeholder:** *Insert screenshot of Task Scheduler Library displaying the active "Daily Windows Update Check" basic task.*
-> `![Task Scheduler Daily Update](./screenshots/04-task-scheduler-update-check.png)`
+screenshot of Task Scheduler Library displaying the active "Daily Windows Update Check" basic task.
+![Task Scheduler Daily Update](./Screenshots/04-task-scheduler.png)
 
 ---
 
@@ -120,7 +120,7 @@ To maintain patch management compliance without manual intervention, a daily sch
 
 A full 2-minute video walkthrough demonstrating all live configuration checks, firewall state toggling, and service inspections is available in the repository assets.
 
-* **Script & Voiceover Guide:** [View Printable PDF Script Guide](./lab3_video_script.html)
+* **Script & Voiceover Guide:** [View Video Demo Guide](https://youtu.be/dflP8BSbo08)
 
 ---
 
