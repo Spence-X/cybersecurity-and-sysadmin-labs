@@ -73,23 +73,23 @@ A comprehensive video demonstration showcasing the live Group Policy creation, e
 
 
 ## 🖼️ Visual Evidence & Proof of Implementation
-1. GPO Creation & Enforcement Link
+### 1. GPO Creation & Enforcement Link
 Ensign Domain Policy linked to domain root with Enforced padlock badge.
 ![GPO Enforced Link](screenshots/01-gpo-created-and-enforced.png)
 
-2. Password Policy Configuration
+### 2. Password Policy Configuration
 GPO Management Editor showing all 6 Password Policy rules configured.
 ![Password Policy Settings](screenshots/02-password-policy-settings.png)
 
-3. Account Lockout Policy Configuration
+### 3. Account Lockout Policy Configuration
 GPO Management Editor showing Account Lockout thresholds and Administrator protection enabled.
 ![Account Lockout Policy Settings](screenshots/03-account-lockout-policy.png)
 
-4. CLI Policy Enforcement Verification
+### 4. CLI Policy Enforcement Verification
 Terminal showing gpupdate /force completion and gpresult /r displaying Applied GPOs.
 ![CLI Verification](screenshots/04-gpupdate-gpresult-verification.png)
 
-5. Resultant Set of Policy (RSOP) Audit
+### 5. Resultant Set of Policy (RSOP) Audit
 rsop.msc snap-in displaying Ensign Domain Policy as the active Source GPO for Account Policies.
 ![RSOP Verification](screenshots/05-rsop-verification.png)
 
