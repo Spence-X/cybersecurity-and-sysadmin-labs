@@ -64,6 +64,14 @@ gpresult /r
 ```
 ### Verification Result: Under COMPUTER SETTINGS > Applied Group Policy Objects, the output confirms that Ensign Domain Policy was successfully fetched and applied.
 
+---
+
+## 📹 Video Walkthrough & Narration
+A comprehensive video demonstration showcasing the live Group Policy creation, enforcement settings, password policy configuration, account lockout controls, and RSOP verification:
+
+[![Lab 04 Video Walkthrough](https://img.shields.io/badge/YouTube-Watch%20Lab%2004%20Demonstration-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/Lw56Ac4EcL4)
+
+
 ## 🖼️ Visual Evidence & Proof of Implementation
 1. GPO Creation & Enforcement Link
 Ensign Domain Policy linked to domain root with Enforced padlock badge.
