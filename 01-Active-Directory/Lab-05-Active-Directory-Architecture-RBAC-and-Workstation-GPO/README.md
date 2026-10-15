@@ -13,6 +13,16 @@ This lab documents the design and configuration of an Active Directory environme
 **Platform:** AWS Academy Learner Lab  
 **Server OS:** Windows Server 2025 Datacenter
 
+### Deployment evidence
+
+![AWS EC2 instance running the Ensign AD server](./evidence/01-aws-ec2-instance.jpeg)
+
+*AWS Academy EC2 instance for the Windows Server lab. The screenshot shows the instance running; its status checks were still initializing at capture time.*
+
+![Server Manager showing Active Directory Domain Services](./evidence/02-server-manager-ad-ds.jpeg)
+
+*Server Manager view identifying the domain controller and AD DS role.*
+
 ## Objectives
 
 - Organize user and computer objects into functional Organizational Units (OUs).
@@ -38,6 +48,10 @@ ensignsuccess.corp
 
 Use the screenshots in this lab to confirm the exact OU paths and names in the deployed environment.
 
+![Active Directory OU structure](./evidence/03-ad-ou-structure.jpeg)
+
+*The deployed directory structure separates Student Success users, advisor workstations, and security groups.*
+
 ## Accounts and Groups
 
 **Center Manager**
@@ -58,6 +72,10 @@ Use the screenshots in this lab to confirm the exact OU paths and names in the d
 - `SG-Student-Advisors`
 
 Group-based access is used instead of assigning folder permissions individually to every user.
+
+![Student Advisor security group membership](./evidence/09-advisors-group-membership.jpeg)
+
+*The advisor security group contains the five advisor accounts shown in the directory.*
 
 ## Shared Folders and Access Control
 
@@ -88,6 +106,16 @@ Get-SmbShareAccess -Name shares
 
 The observed NTFS ACL output showed Modify permissions for both security groups on AdvisingDocs, and Full Control for the management group on AdminReports. Administrators and SYSTEM retained Full Control.
 
+### Permission evidence
+
+![AdvisingDocs folder permissions for advisors](./evidence/12-advisingdocs-advisor-permissions.jpeg)
+
+*AdvisingDocs permission view with the Student Advisors group selected.*
+
+![AdminReports NTFS permissions](./evidence/11-adminreports-ntfs-permissions.jpeg)
+
+*AdminReports security settings showing the relevant management and administrative entries.*
+
 **Scope note:** Effective network access depends on both SMB share permissions and NTFS permissions, as well as account group membership. The ACL inspection is documented, but a separate-client access test was not completed.
 
 ## Group Policy Settings
@@ -101,6 +129,14 @@ Configured values:
 - Password complexity: **Enabled**
 - Account lockout threshold: **5 failed attempts**
 
+![Domain password policy](./evidence/18-password-policy.jpeg)
+
+*Password policy values shown in the Default Domain Policy editor.*
+
+![Account lockout policy](./evidence/19-account-lockout-policy.jpeg)
+
+*Account lockout settings shown in the policy editor.*
+
 ### Student Advisor workstation branding
 
 GPO: `GPO-Student-Advisor-Workstation-Branding`
@@ -113,6 +149,24 @@ Configured/documented settings:
 - **Removable Disks: Deny write access** is enabled.
 
 **Validation limitation:** A separate domain-joined workstation was not deployed. Therefore, client-side policy application was not validated. Do not describe the wallpaper, browser, or USB restriction as successfully tested on a client workstation. The proposal mentions loopback processing; only report it as enabled if confirmed in Group Policy Management.
+
+### Workstation policy evidence
+
+![Workstation branding GPO linked to the advisor workstation OU](./evidence/14-workstation-gpo-link.jpeg)
+
+*Group Policy Management view showing the workstation branding GPO linked to the advisor workstation OU.*
+
+![Microsoft Edge homepage policy](./evidence/16-edge-homepage-policy.jpeg)
+
+*The Edge homepage URL policy is enabled; the field is truncated in the screenshot.*
+
+![Desktop wallpaper policy](./evidence/17-desktop-wallpaper-policy.jpeg)
+
+*The desktop wallpaper policy is enabled and references a UNC path; the full path is truncated in the screenshot.*
+
+![Removable disk write restriction](./evidence/20-removable-disks-policy.jpeg)
+
+*The removable-disk write restriction is enabled in the policy editor. Client-side enforcement has not been demonstrated.*
 
 ## Validation Commands
 
@@ -137,6 +191,12 @@ Do not commit passwords, AWS credentials, private keys, tokens, or unredacted se
 Watch the YouTube walkthrough of this lab: [Active Directory Lab 05 Demo](https://youtu.be/JWVv0YnQ5jE).
 
 ## Evidence
+## Video Demonstration
+
+Watch the walkthrough of this project on YouTube: [Active Directory Lab 05 Demo](https://youtu.be/JWVv0YnQ5jE).
+
+---
+
 
 The screenshot evidence register and uploaded images are in the [`evidence/` folder](./evidence/README.md). The register identifies what each screenshot supports and notes any validation limits. Suggested evidence:
 
