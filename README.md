@@ -24,8 +24,8 @@ I am an Information Technology student focused on enterprise system administrati
 │   ├── Lab-01-Domain-Controller-Promotion/                                 # AD DS Installation, Domain Setup & RDP Auth Verification
 │   ├── Lab-02-Active-Directory-OUs-and-NTFS-Permissions/                    # OU Architecture & Granular NTFS Security
 │   ├── Lab-03-Network-Ports-Services-Firewall-Task-Scheduler/               # Network Services, Custom Firewall Rules & Automation
-│   └── Lab-04-Active-Directory-Group-Policy-Objects-and-Security-Hardening/ # GPO Precedence, Password/Account Lockout Policies & RSOP Audit
-│       └── README.md
+│   ├── Lab-04-Active-Directory-Group-Policy-Objects-and-Security-Hardening/ # GPO Precedence, Password/Account Lockout Policies & RSOP Audit
+│   └── Lab-05-Active-Directory-Architecture-RBAC-and-Workstation-GPO/       # AD Architecture, Role-Based Access & Workstation Policy Design
 ├── 02-Linux-Administration/
 │   └── README.md
 ├── 03-Ethical-Hacking-and-Security/
@@ -40,6 +40,7 @@ I am an Information Technology student focused on enterprise system administrati
 | **Active Directory** | Lab 02: OUs & Granular NTFS Permissions | OU Architecture, Access Control Lists (ACLs), PoLP | [View Report](./01-Active-Directory/Lab-02-Active-Directory-OUs-and-NTFS-Permissions) |
 | **Active Directory** | Lab 03: Ports, Services, Firewall & Task Scheduler |	netstat, Port 50000 Rules, Task Scheduler Automation | [View Report](./01-Active-Directory/Lab-03-Network-Ports-Services-Firewall-Task-Schedule) |
 | **Active Directory** | Lab 04: GPO & Domain Security Hardening | GPO Enforcement, Password & Account Lockout Policies, RSOP Audit | [View Report](./01-Active-Directory/Lab-04-Active-Directory-Group-Policy-Objects-and-Security-Hardening) |
+| **Active Directory** | Lab 05: AD Architecture, RBAC & Workstation GPO | OU Design, Security Groups, NTFS/SMB Permissions, Password Policy, Workstation GPO | [View Report](./01-Active-Directory/Lab-05-Active-Directory-Architecture-RBAC-and-Workstation-GPO) |
 | **Linux Admin** | *Upcoming Lab* | Systemd, File System Permissions, Shell Scripting | *In Progress* |
 | **Ethical Hacking** | *Upcoming Lab* | Network Scanning, Vulnerability Assessment | *In Progress* |
 
