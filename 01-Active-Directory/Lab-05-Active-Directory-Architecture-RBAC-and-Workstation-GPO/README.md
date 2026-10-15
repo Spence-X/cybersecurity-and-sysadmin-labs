@@ -132,6 +132,10 @@ Get-SmbShareAccess -Name shares
 
 Do not commit passwords, AWS credentials, private keys, tokens, or unredacted sensitive information.
 
+## Video Demonstration
+
+Watch the YouTube walkthrough of this lab: [Active Directory Lab 05 Demo](https://youtu.be/JWVv0YnQ5jE).
+
 ## Evidence
 
 The screenshot evidence register and uploaded images are in the [`evidence/` folder](./evidence/README.md). The register identifies what each screenshot supports and notes any validation limits. Suggested evidence:
