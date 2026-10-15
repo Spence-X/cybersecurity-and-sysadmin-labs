@@ -29,4 +29,4 @@ This folder tracks screenshots collected for the Student Success Center Active D
 
 ## Privacy and security
 
-Do not commit passwords, private keys, access tokens, or other credentials. Keep AWS account identifiers and public IP addresses out of public evidence when they are not needed. Before keeping the AWS console screenshot public, ensure the AWS account ID is cropped or redacted. The private IP address is internal lab information, but it can also be omitted from a public screenshot if it is not needed.
+
