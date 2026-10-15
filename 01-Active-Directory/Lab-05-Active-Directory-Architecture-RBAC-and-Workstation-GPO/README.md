@@ -134,7 +134,7 @@ Do not commit passwords, AWS credentials, private keys, tokens, or unredacted se
 
 ## Evidence
 
-Add only screenshots actually captured from the lab to the `screenshots/` folder. Suggested evidence:
+The screenshot evidence register and uploaded images are in the [`evidence/` folder](./evidence/README.md). The register identifies what each screenshot supports and notes any validation limits. Suggested evidence:
 
 1. AWS instance running (with sensitive details cropped/redacted).
 2. Active Directory domain and OU tree.
@@ -145,7 +145,7 @@ Add only screenshots actually captured from the lab to the `screenshots/` folder
 7. Workstation GPO settings.
 8. Password and account-lockout policy settings.
 
-Do not use placeholder images as evidence.
+Do not use placeholder images as evidence. Screenshots document configuration; they do not by themselves prove successful client-side policy application or effective access from a separate workstation.
 
 ## Lessons Learned
 
