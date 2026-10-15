@@ -27,15 +27,6 @@ This folder tracks screenshots collected for the Student Success Center Active D
 | [19-account-lockout-policy.jpeg](./19-account-lockout-policy.jpeg) | Lockout duration 30 minutes, threshold 5 invalid attempts, administrator lockout enabled, reset counter after 10 minutes | Account lockout configuration is visible | These are the values shown in the policy editor |
 | [[20-removable-disks-policy.jpeg](./20-removable-disks-policy.jpeg)](./20-removable-disks-policy.jpeg) | “Removable Disks: Deny write access” is Enabled | Removable-disk write restriction is configured in the policy editor | Client-side enforcement has not been demonstrated |
 
-## Still needed for a complete demonstration
-
-- If available, a successful client-side test from a domain-joined workstation (GPO application, wallpaper/browser result, and role-based access). No separate workstation is evidenced by the screenshots received so far, so client-side application should not be claimed as verified.
-- If possible, a separate view of the full Edge homepage URL and wallpaper UNC path, without the fields truncated.
-
 ## Privacy and security
 
 Do not commit passwords, private keys, access tokens, or other credentials. Keep AWS account identifiers and public IP addresses out of public evidence when they are not needed. Before keeping the AWS console screenshot public, ensure the AWS account ID is cropped or redacted. The private IP address is internal lab information, but it can also be omitted from a public screenshot if it is not needed.
-
-## Open the screenshot files
-
-The screenshots are stored in this folder. Open the image matching the filename in the table above to inspect the evidence. If any uploaded filenames differ from the suggested filenames, update this register to match the actual names.
