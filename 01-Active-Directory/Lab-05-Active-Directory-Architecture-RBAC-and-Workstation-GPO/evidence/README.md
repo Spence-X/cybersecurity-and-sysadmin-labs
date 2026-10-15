@@ -1,6 +1,6 @@
 # Lab 05 Evidence Register
 
-This folder tracks screenshots collected for the Student Success Center Active Directory project. The entries describe evidence received in chat; they do not imply the original image files have been committed to this folder.
+This folder tracks screenshots collected for the Student Success Center Active Directory project. The original screenshot files have been uploaded to this folder. The table below identifies the intended filename and the claim each image supports. Review each image directly before relying on it as proof.
 
 ## Evidence received (October 15, 2026)
 
@@ -29,10 +29,13 @@ This folder tracks screenshots collected for the Student Success Center Active D
 
 ## Still needed for a complete demonstration
 
-- The actual screenshot image files must be committed alongside this register.
 - If available, a successful client-side test from a domain-joined workstation (GPO application, wallpaper/browser result, and role-based access). No separate workstation is evidenced by the screenshots received so far, so client-side application should not be claimed as verified.
 - If possible, a separate view of the full Edge homepage URL and wallpaper UNC path, without the fields truncated.
 
 ## Privacy and security
 
-Do not commit passwords, private keys, access tokens, or other credentials. Keep AWS account identifiers and public IP addresses out of public evidence when they are not needed. The AWS console screenshot shows an AWS account ID; crop or redact that identifier before publishing the image. The private IP address is internal lab information, but it can also be omitted from a public screenshot if it is not needed.
+Do not commit passwords, private keys, access tokens, or other credentials. Keep AWS account identifiers and public IP addresses out of public evidence when they are not needed. Before keeping the AWS console screenshot public, ensure the AWS account ID is cropped or redacted. The private IP address is internal lab information, but it can also be omitted from a public screenshot if it is not needed.
+
+## Open the screenshot files
+
+The screenshots are stored in this folder. Open the image matching the filename in the table above to inspect the evidence. If any uploaded filenames differ from the suggested filenames, update this register to match the actual names.
