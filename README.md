@@ -30,6 +30,8 @@ I am an Information Technology student focused on enterprise system administrati
 │   └── README.md
 ├── 03-Ethical-Hacking-and-Security/
 │   └── README.md
+├── 04-IT125-Windows-Administration/
+│   └── README.md
 └── README.md
 ```
 ## 🧪 Active Lab Index
